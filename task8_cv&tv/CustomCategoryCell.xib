@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="CustomCategoryCell" customModule="task8_cv_tv" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="232" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FSl-dR-p2R">
+                    <rect key="frame" x="0.0" y="0.0" width="232" height="32"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zpf-uG-CNG">
+                            <rect key="frame" x="8" y="4" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Ddg-KA-udM"/>
+                                <constraint firstAttribute="width" constant="24" id="EKJ-MM-OCe"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDh-fC-nQL">
+                            <rect key="frame" x="40" y="5.6666666666666679" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="AET-8I-wcD"/>
+                        <constraint firstItem="sDh-fC-nQL" firstAttribute="leading" secondItem="zpf-uG-CNG" secondAttribute="trailing" constant="8" id="Djj-Dp-kpC"/>
+                        <constraint firstItem="zpf-uG-CNG" firstAttribute="leading" secondItem="FSl-dR-p2R" secondAttribute="leading" constant="8" id="MWF-cs-07r"/>
+                        <constraint firstItem="sDh-fC-nQL" firstAttribute="centerY" secondItem="FSl-dR-p2R" secondAttribute="centerY" id="Mag-fc-5K5"/>
+                        <constraint firstItem="zpf-uG-CNG" firstAttribute="centerY" secondItem="FSl-dR-p2R" secondAttribute="centerY" id="Pvt-Ls-ond"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="FSl-dR-p2R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SaI-9p-o6a"/>
+                <constraint firstItem="FSl-dR-p2R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lF0-wU-yRv"/>
+                <constraint firstAttribute="bottom" secondItem="FSl-dR-p2R" secondAttribute="bottom" id="rWO-xl-m4u"/>
+                <constraint firstAttribute="trailing" secondItem="FSl-dR-p2R" secondAttribute="trailing" id="unv-7i-LUJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="customView" destination="FSl-dR-p2R" id="qfw-1f-T4z"/>
+                <outlet property="imageView" destination="zpf-uG-CNG" id="mi6-vB-OcZ"/>
+                <outlet property="titleLabel" destination="sDh-fC-nQL" id="mpm-b1-Tsi"/>
+            </connections>
+            <point key="canvasLocation" x="-254.96183206106869" y="166.90140845070422"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
